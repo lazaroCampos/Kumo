@@ -21,7 +21,6 @@ def obter_clima(cidade):
         
         # 4. Transforma a resposta bruta em Dicionário Python (O tal do JSON!)
         dados_brutos = response.json()
-
         # Se o site respondeu "OK" (Código 200)
         if response.status_code == 200:
             return {
@@ -46,5 +45,5 @@ def obter_clima(cidade):
 # Bloco de teste: Só roda se executares este arquivo diretamente
 if __name__ == "__main__":
     # Teste rápido para ver o JSON a funcionar
-    resultado = obter_clima("Lisboa")
+    resultado = obter_clima("Cruz Alta")
     print(resultado)
